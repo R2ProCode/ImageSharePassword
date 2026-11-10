@@ -1,0 +1,37 @@
+﻿<div class="container">
+    <div class="row justify-content-center min-vh-100 align-items-center">
+        <div class="col-md-6 col-lg-5">
+            <div class="bg-white shadow-lg rounded-5 p-5 border">
+                <div class="text-center mb-5">
+                    <div class="display-4 mb-3">☁️</div>
+                    <h1 class="h3 fw-bold mb-2">Upload Image</h1>
+                    <p class="text-secondary mb-0">Securely share your image with password protection</p>
+                </div>
+
+                <form method="post" action="/home/upload" enctype="multipart/form-data">
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold small text-uppercase text-secondary">Image</label>
+                        <input type="file" class="form-control form-control-lg rounded-4 border-2" id="image" name="image" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold small text-uppercase text-secondary">Password</label>
+
+                        <div class="input-group input-group-lg">
+                            <input type="password" class="form-control rounded-start-4 border-2" id="password" name="password" placeholder="Enter password" required>
+                            <button type="button" class="btn btn-outline-secondary rounded-end-4" id="togglePassword">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary btn-lg rounded-4 w-100 py-3 fw-semibold shadow-sm">Upload Image</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+	<script src="/js/password-toggle.js"></script>
+}
