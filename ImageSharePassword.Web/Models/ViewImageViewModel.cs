@@ -6,5 +6,6 @@ namespace ImageSharePassword.Web.Models
     {
         public Image Image { get; set; }
         public bool Show { get; set; } = false;
+        public string Message { get; set; }
     }
 }

@@ -61,7 +61,7 @@ namespace ImageSharePassword.Web.Controllers
 
             else if (TempData["message"] != null)
             {
-                ViewBag.Message = (string)TempData["message"];
+                viewModel.Message = (string)TempData["message"];
                 
             }
 
